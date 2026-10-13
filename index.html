@@ -113,18 +113,116 @@
       </div>
     </section>
 
-    <section class="section articles" id="artikel">
-      <div class="section-heading">
-        <p class="eyebrow">BELAJAR DARI MANA SAJA</p>
-        <h2>Artikel dan materi edukasi</h2>
-        <p>Konten dapat ditambahkan dan diperbarui oleh pengelola website.</p>
+   
+<section class="section articles" id="artikel">
+  <div class="section-heading">
+    <p class="eyebrow">BELAJAR DARI MANA SAJA</p>
+    <h2>Artikel dan Materi Edukasi</h2>
+    <p>Pengetahuan praktis untuk keluarga Kota Metro.</p>
+  </div>
+
+  <div class="article-grid">
+
+    <article class="article-card">
+      <div class="article-art art-family">♡</div>
+      <div class="article-body">
+        <span class="category">PENGASUHAN</span>
+        <h3>Membangun Komunikasi Positif di Rumah</h3>
+        <p>Belajar menjadi orang tua yang mendengarkan, memahami, dan menghargai anak.</p>
+        <button class="read-button"
+          onclick="document.getElementById('materi-pengasuhan').hidden=false; document.getElementById('materi-pengasuhan').scrollIntoView({behavior:'smooth'});">
+          Baca Selengkapnya →
+        </button>
       </div>
-      <div class="article-grid">
-        <article class="article-card"><div class="article-art art-family">♡</div><div class="article-body"><span class="category">PENGASUHAN</span><h3>Membangun komunikasi positif di rumah</h3><p>Mulai dari mendengarkan, menghargai perasaan anak, dan membuat kesepakatan keluarga.</p><span class="coming">Materi dapat ditambahkan</span></div></article>
-        <article class="article-card"><div class="article-art art-health">✚</div><div class="article-body"><span class="category">KELUARGA SEHAT</span><h3>Langkah keluarga mendukung 1.000 HPK</h3><p>Kenali pentingnya gizi, kesehatan ibu, dan pemantauan tumbuh kembang.</p><span class="coming">Materi dapat ditambahkan</span></div></article>
-        <article class="article-card"><div class="article-art art-safe">⬡</div><div class="article-body"><span class="category">PERLINDUNGAN</span><h3>Menciptakan rumah yang aman bagi anak</h3><p>Bangun lingkungan yang menghargai anak dan bebas dari kekerasan.</p><span class="coming">Materi dapat ditambahkan</span></div></article>
+    </article>
+
+    <article class="article-card">
+      <div class="article-art art-health">✚</div>
+      <div class="article-body">
+        <span class="category">KELUARGA SEHAT</span>
+        <h3>Mengenal 1.000 Hari Pertama Kehidupan</h3>
+        <p>Memahami pentingnya gizi dan kesehatan ibu serta anak sejak awal kehidupan.</p>
+        <button class="read-button"
+          onclick="document.getElementById('materi-kesehatan').hidden=false; document.getElementById('materi-kesehatan').scrollIntoView({behavior:'smooth'});">
+          Baca Selengkapnya →
+        </button>
       </div>
-    </section>
+    </article>
+
+    <article class="article-card">
+      <div class="article-art art-safe">⬡</div>
+      <div class="article-body">
+        <span class="category">PERLINDUNGAN ANAK</span>
+        <h3>Menciptakan Rumah yang Aman bagi Anak</h3>
+        <p>Mengenali hak anak dan membangun keluarga yang bebas dari kekerasan.</p>
+        <button class="read-button"
+          onclick="document.getElementById('materi-perlindungan').hidden=false; document.getElementById('materi-perlindungan').scrollIntoView({behavior:'smooth'});">
+          Baca Selengkapnya →
+        </button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- MATERI LENGKAP -->
+
+<section class="section" id="materi-pengasuhan" hidden>
+  <h2>Membangun Komunikasi Positif di Rumah</h2>
+  <p>Komunikasi positif membantu membangun hubungan yang hangat,
+  aman, dan saling menghargai antara orang tua dan anak.</p>
+  <h3>Langkah yang dapat dilakukan</h3>
+  <ol>
+    <li>Dengarkan anak tanpa langsung memotong pembicaraannya.</li>
+    <li>Gunakan kata-kata yang sopan dan mudah dipahami.</li>
+    <li>Hargai perasaan anak meskipun pendapatnya berbeda.</li>
+    <li>Tetapkan aturan keluarga secara jelas dan konsisten.</li>
+    <li>Berikan apresiasi atas usaha dan perilaku positif anak.</li>
+  </ol>
+  <button onclick="document.getElementById('materi-pengasuhan').hidden=true">
+    Tutup Materi
+  </button>
+</section>
+
+<section class="section" id="materi-kesehatan" hidden>
+  <h2>Mengenal 1.000 Hari Pertama Kehidupan</h2>
+  <p>Periode 1.000 Hari Pertama Kehidupan dimulai sejak kehamilan
+  hingga anak berusia dua tahun. Periode ini penting bagi pertumbuhan
+  dan perkembangan anak.</p>
+  <h3>Hal yang perlu diperhatikan</h3>
+  <ol>
+    <li>Penuhi kebutuhan gizi ibu selama kehamilan.</li>
+    <li>Lakukan pemeriksaan kehamilan sesuai anjuran tenaga kesehatan.</li>
+    <li>Berikan ASI eksklusif selama enam bulan pertama jika memungkinkan
+    dan sesuai kondisi ibu dan bayi.</li>
+    <li>Berikan MPASI bergizi seimbang mulai usia enam bulan sambil
+    melanjutkan pemberian ASI.</li>
+    <li>Pantau pertumbuhan dan perkembangan anak di fasilitas kesehatan.</li>
+  </ol>
+  <p>Informasi ini merupakan edukasi umum. Konsultasikan kebutuhan
+  khusus dengan tenaga kesehatan.</p>
+  <button onclick="document.getElementById('materi-kesehatan').hidden=true">
+    Tutup Materi
+  </button>
+</section>
+
+<section class="section" id="materi-perlindungan" hidden>
+  <h2>Menciptakan Rumah yang Aman bagi Anak</h2>
+  <p>Setiap anak berhak mendapatkan kasih sayang, perlindungan,
+  kesempatan menyampaikan pendapat, dan lingkungan yang aman.</p>
+  <h3>Langkah perlindungan dalam keluarga</h3>
+  <ol>
+    <li>Bangun komunikasi agar anak nyaman bercerita.</li>
+    <li>Ajarkan anak mengenali situasi yang membuatnya tidak aman.</li>
+    <li>Hindari kekerasan fisik maupun verbal dalam pengasuhan.</li>
+    <li>Dengarkan dan tanggapi laporan anak dengan serius.</li>
+    <li>Cari bantuan melalui layanan perlindungan perempuan dan anak
+    yang resmi jika diperlukan.</li>
+  </ol>
+  <button onclick="document.getElementById('materi-perlindungan').hidden=true">
+    Tutup Materi
+  </button>
+</section>
 
     <section class="section services" id="layanan">
       <div class="section-heading centered">
