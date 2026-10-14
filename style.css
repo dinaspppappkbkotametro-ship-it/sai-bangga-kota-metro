@@ -507,3 +507,55 @@
   }
 }
 
+
+/* Dua gambar SAI BANGGA berdampingan */
+.sai-gambar-dua {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 28px auto;
+  align-items: start;
+}
+
+.sai-gambar-item {
+  min-width: 0;
+  padding: 8px;
+  overflow: hidden;
+  border: 3px solid #f2b51d;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(18, 59, 120, 0.12);
+}
+
+.sai-gambar-item img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  background: #f5f9ff;
+}
+
+.sai-gambar-item p {
+  margin: 12px 6px 6px;
+  color: #174a8b;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Tampilan ponsel */
+@media (max-width: 600px) {
+  .sai-gambar-dua {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .sai-gambar-item img {
+    height: auto;
+    max-height: 320px;
+  }
+}
