@@ -31,3 +31,30 @@
   color: #b8860b;
   background: #fff4d6;
 }
+
+/* Informasi peluncuran SAI BANGGA */
+.launch-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+  padding: 22px;
+  background: linear-gradient(135deg, #eaf3ff, #f0faf4);
+  border-left: 5px solid #eab52a;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(18, 59, 120, 0.08);
+}
+
+.launch-icon {
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.launch-info strong {
+  color: #123b78;
+}
+
+.launch-info p {
+  margin: 8px 0 0;
+  line-height: 1.7;
+}
