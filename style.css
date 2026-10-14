@@ -84,3 +84,14 @@
 .about-detail p:last-child {
   margin-bottom: 0;
 }
+
+/* Gambar SAI BANGGA berbentuk oval */
+.gambar-sai-bangga {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 48% / 38%;
+  border: 5px solid #f2b51d;
+  box-shadow: 0 12px 30px rgba(18, 59, 120, 0.18);
+}
