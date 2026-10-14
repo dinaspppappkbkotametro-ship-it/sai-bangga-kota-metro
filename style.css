@@ -140,3 +140,56 @@
   font-size: 26px;
 }
 
+/* Tata letak Tentang SAI BANGGA */
+.tentang-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.85fr);
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.tentang-text {
+  min-width: 0;
+}
+
+.tentang-text h2 {
+  margin-top: 12px;
+}
+
+.tentang-visual {
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+  padding: 6px;
+  background: #f2b51d;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(23, 74, 139, 0.16);
+}
+
+.tentang-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 9px;
+}
+
+/* Tampilan ponsel */
+@media (max-width: 768px) {
+  .tentang-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .tentang-visual {
+    max-width: 100%;
+    justify-self: stretch;
+  }
+
+  .tentang-visual img {
+    aspect-ratio: 16 / 9;
+  }
+}
+
