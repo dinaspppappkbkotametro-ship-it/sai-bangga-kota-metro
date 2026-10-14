@@ -58,3 +58,29 @@
   margin: 8px 0 0;
   line-height: 1.7;
 }
+
+.about-detail {
+  max-width: 100%;
+  margin-top: 24px;
+  padding: 24px;
+  background: #f4f8ff;
+  border-left: 4px solid #f2b51d;
+  border-radius: 12px;
+  line-height: 1.8;
+  color: #29456c;
+}
+
+.about-detail h3 {
+  color: #123b78;
+  font-size: 1.25rem;
+  margin: 0 0 16px;
+}
+
+.about-detail p {
+  margin: 0 0 16px;
+  text-align: justify;
+}
+
+.about-detail p:last-child {
+  margin-bottom: 0;
+}
