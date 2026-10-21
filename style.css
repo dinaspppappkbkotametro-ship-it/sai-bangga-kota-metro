@@ -838,3 +838,104 @@
     padding: 13px;
   }
 }
+
+/* =====================================
+   ARTIKEL EDUKASI SAI BANGGA
+   ===================================== */
+
+/* Daftar subtema bisa diklik */
+.subtema-content li {
+  cursor: pointer;
+  padding: 7px 8px;
+  border-radius: 7px;
+  transition: background 0.2s;
+}
+
+.subtema-content li:hover {
+  background: #e4efff;
+  color: #0759b2;
+}
+
+.subtema-content li:focus-visible {
+  outline: 2px solid #0759b2;
+  outline-offset: 2px;
+}
+
+/* Tempat artikel */
+.artikel-subtema {
+  max-width: 950px;
+  margin: 45px auto 0;
+  padding: 32px;
+  background: #ffffff;
+  border: 2px solid #e8b331;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(15, 59, 112, 0.08);
+}
+
+.artikel-subtema[hidden] {
+  display: none;
+}
+
+.artikel-subtema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.artikel-label {
+  color: #16834b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.tutup-artikel {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #e8f1ff;
+  color: #124481;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.artikel-kategori {
+  margin-top: 20px;
+  color: #16834b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.artikel-subtema h2 {
+  margin: 12px 0 20px;
+  color: #123f7e;
+  font-size: clamp(22px, 3vw, 30px);
+  line-height: 1.3;
+}
+
+.artikel-isi {
+  color: #405b79;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.artikel-isi h3 {
+  margin-top: 24px;
+  color: #123f7e;
+}
+
+.artikel-isi li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .artikel-subtema {
+    padding: 20px;
+    margin-top: 25px;
+  }
+
+  .artikel-subtema-header {
+    align-items: flex-start;
+  }
+}
