@@ -692,3 +692,149 @@
     height: 70px;
   }
 }
+
+
+/* ==========================================
+   RUANG BELAJAR - 6 TEMA DAN 60 SUBTEMA
+   ========================================== */
+
+/* Kartu tema */
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.learning-card {
+  min-width: 0;
+  height: auto;
+  padding: 22px;
+  border: 1px solid #dce7f5;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 5px 18px rgba(18, 59, 120, 0.05);
+}
+
+.learning-card h3 {
+  margin: 14px 0 10px;
+  color: #123f7e;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.learning-card > p {
+  color: #526b87;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Tombol Pelajari Tema */
+.tema-detail {
+  margin-top: 18px;
+  border-top: 1px solid #e6edf7;
+  padding-top: 14px;
+}
+
+.tema-detail summary {
+  display: inline-block;
+  color: #0759b2;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tema-detail summary::-webkit-details-marker {
+  display: none;
+}
+
+.tema-detail summary:hover {
+  color: #21864c;
+  text-decoration: underline;
+}
+
+.tema-detail[open] summary {
+  color: #21864c;
+}
+
+/* Daftar subtema */
+.subtema-content {
+  margin-top: 16px;
+  padding: 16px;
+  border-left: 4px solid #f2b51d;
+  border-radius: 10px;
+  background: #f4f8ff;
+}
+
+.subtema-content h4 {
+  margin: 0 0 12px;
+  color: #123f7e;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.subtema-content ol {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.subtema-content li {
+  margin-bottom: 11px;
+  color: #405b79;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.subtema-content li::marker {
+  color: #0759b2;
+  font-weight: 700;
+}
+
+/* Warna aksen per tema */
+.tema-asah {
+  border-top: 4px solid #f59e42;
+}
+
+.tema-sehat {
+  border-top: 4px solid #ed75a2;
+}
+
+.tema-reproduksi {
+  border-top: 4px solid #9b72e8;
+}
+
+.tema-perlindungan {
+  border-top: 4px solid #3b82f6;
+}
+
+.tema-ketahanan {
+  border-top: 4px solid #38a169;
+}
+
+.tema-mandiri {
+  border-top: 4px solid #f2b51d;
+}
+
+/* Tablet */
+@media (max-width: 950px) {
+  .learning-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .learning-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .learning-card {
+    padding: 18px;
+  }
+
+  .subtema-content {
+    padding: 13px;
+  }
+}
