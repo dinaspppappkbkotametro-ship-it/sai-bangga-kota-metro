@@ -1734,3 +1734,34 @@
   }
 }
 
+
+/* GAMBAR UTAMA DASHBOARD OMAH PELUK */
+.omah-peluk-logo-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px auto 26px;
+  padding: 0 16px;
+}
+
+.omah-peluk-logo-dashboard img {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  max-height: 230px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(23, 63, 122, 0.13);
+}
+
+@media screen and (max-width: 600px) {
+  .omah-peluk-logo-dashboard {
+    margin: 16px auto 20px;
+  }
+
+  .omah-peluk-logo-dashboard img {
+    max-width: 260px;
+    max-height: 190px;
+  }
+}
