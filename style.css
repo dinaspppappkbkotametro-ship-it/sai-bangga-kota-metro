@@ -1733,3 +1733,27 @@
     text-align: center;
   }
 }
+
+/* PERBAIKAN KHUSUS HP: PRINSIP PUSPAGA OMAH PELUK */
+@media screen and (max-width: 600px) {
+
+  .omah-peluk-info h3,
+  .omah-peluk-info h4,
+  .omah-peluk-info strong,
+  .omah-peluk-card h3,
+  .omah-peluk-card h4 {
+    color: #173f7a !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #173f7a !important;
+  }
+
+  .omah-peluk-info p,
+  .omah-peluk-info li,
+  .omah-peluk-card p,
+  .omah-peluk-card li {
+    color: #334155 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #334155 !important;
+  }
+
+}
