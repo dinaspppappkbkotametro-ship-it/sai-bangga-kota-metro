@@ -1506,176 +1506,340 @@
   }
 }
 
-/* DIREKTORI INTERAKTIF PUSPAGA OMAH PELUK */
+
+/* =========================================
+   DIREKTORI INTERAKTIF PUSPAGA OMAH PELUK
+   TAMPILAN JELAS DI KOMPUTER DAN HP
+   ========================================= */
 
 .puspaga-list {
+  width: 100%;
   max-width: 1150px;
   margin: 35px auto;
-  padding: 20px;
+  padding: 24px;
+  box-sizing: border-box;
   scroll-margin-top: 120px;
+  color: #17365f;
 }
 
 .direktori-heading {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  max-width: 800px;
 }
 
 .direktori-heading h3 {
-  font-size: clamp(24px, 4vw, 34px);
+  font-size: clamp(26px, 3.5vw, 36px);
+  line-height: 1.3;
+  font-weight: 800;
   color: #123b78;
+  margin: 0 0 14px;
 }
 
 .direktori-heading p {
-  color: #526782;
-  line-height: 1.7;
+  color: #344b68;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 10px 0;
 }
 
+/* Kolom pencarian */
 .direktori-filter {
-  max-width: 600px;
-  margin: 0 auto 28px;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 30px;
 }
 
 .direktori-filter label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   color: #123b78;
-  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 800;
 }
 
 .direktori-filter input {
+  display: block;
   box-sizing: border-box;
   width: 100%;
+  min-height: 52px;
   padding: 14px 16px;
-  border: 1px solid #cbdcf0;
+  border: 2px solid #b7cce6;
   border-radius: 12px;
-  background: #fff;
-  font-size: 15px;
+  background: #ffffff;
+  color: #17365f;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
+.direktori-filter input::placeholder {
+  color: #66778c;
+  opacity: 1;
+}
+
+.direktori-filter input:focus {
+  outline: 3px solid #c8e5ff;
+  border-color: #1766c1;
+}
+
+/* Susunan kartu profil */
 .direktori-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 22px;
+  align-items: stretch;
 }
 
 .profil-puspaga {
   min-width: 0;
-  padding: 20px;
-  border: 1px solid #d9e7f5;
-  border-top: 4px solid #ed2780;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0 7px 22px rgba(18, 59, 120, .07);
+  padding: 23px;
+  border: 1px solid #d2e0ef;
+  border-top: 5px solid #ed2780;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(18, 59, 120, 0.08);
+  box-sizing: border-box;
 }
 
 .profil-kecamatan {
   display: inline-block;
-  margin-bottom: 10px;
-  padding: 5px 10px;
+  margin-bottom: 12px;
+  padding: 7px 12px;
   border-radius: 30px;
-  background: #e9f2ff;
-  color: #1766c1;
-  font-size: 12px;
+  background: #e8f2ff;
+  color: #124e96;
+  font-size: 14px;
+  line-height: 1.4;
   font-weight: 800;
 }
 
 .profil-puspaga h4 {
-  margin: 0 0 12px;
+  margin: 0 0 15px;
   color: #123b78;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.5;
-}
-
-.profil-puspaga p {
-  color: #526782;
-  font-size: 14px;
-  line-height: 1.7;
+  font-weight: 800;
   overflow-wrap: anywhere;
 }
 
-.profil-wa {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 10px 13px;
-  border-radius: 9px;
-  background: #087f62;
-  color: #fff !important;
-  text-decoration: none;
-  font-size: 13px;
+.profil-puspaga p {
+  margin: 10px 0;
+  color: #344b68;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.profil-puspaga strong {
+  color: #17365f;
   font-weight: 800;
 }
 
-.profil-wa:hover {
+/* Tombol WhatsApp */
+.profil-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #087f62;
+  color: #ffffff !important;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.profil-wa:hover,
+.profil-wa:focus {
   background: #06664f;
+  text-decoration: underline;
 }
 
 #hasil-pencarian-puspaga {
+  margin: 24px 0;
+  color: #344b68;
+  font-size: 16px;
+  line-height: 1.7;
   text-align: center;
-  color: #526782;
-  margin: 20px 0;
 }
 
+/* Panel pengaduan */
 .op-pengaduan {
-  margin-top: 30px;
-  padding: 25px;
-  border-radius: 15px;
+  margin-top: 32px;
+  padding: 28px;
+  border-radius: 16px;
   background: #123b78;
-  color: #fff;
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
 .op-pengaduan h3 {
-  margin-top: 0;
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.4;
 }
 
 .op-pengaduan p {
-  line-height: 1.7;
+  margin: 12px 0;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .op-belum-tersedia {
   display: inline-block;
-  padding: 10px 13px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 12px 15px;
   border-radius: 8px;
   background: #fff1c9;
-  color: #765200;
-  font-weight: 700;
-  font-size: 13px;
+  color: #624500;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 800;
 }
 
-@media (max-width: 900px) {
-  .direktori-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .puspaga-list {
-    padding: 12px;
-  }
-
-  .direktori-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .profil-puspaga {
-    padding: 17px;
-  }
-}
-
-/* Gambar Direktori PUSPAGA OMAH PELUK */
+/* Gambar direktori */
 .direktori-banner {
   width: 100%;
-  max-width: 1000px;
+  max-width: 850px;
   margin: 0 auto 28px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .direktori-banner img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 16px;
+  margin: 0 auto;
+  border-radius: 14px;
   border: 1px solid #d9e7f5;
-  box-shadow: 0 8px 24px rgba(18, 59, 120, 0.12);
+  box-shadow: 0 6px 18px rgba(18, 59, 120, 0.10);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .direktori-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .puspaga-list {
+    padding: 20px;
+  }
+
+  .profil-puspaga {
+    padding: 20px;
+  }
+}
+
+/* HP */
+@media (max-width: 600px) {
+  .puspaga-list {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .direktori-heading {
+    margin-bottom: 24px;
+  }
+
+  .direktori-heading h3 {
+    font-size: 27px;
+    line-height: 1.4;
+  }
+
+  .direktori-heading p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .direktori-filter {
+    margin-bottom: 22px;
+  }
+
+  .direktori-filter label {
+    font-size: 16px;
+  }
+
+  .direktori-filter input {
+    min-height: 52px;
+    font-size: 16px;
+  }
+
+  .direktori-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .profil-puspaga {
+    width: 100%;
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .profil-kecamatan {
+    font-size: 14px;
+  }
+
+  .profil-puspaga h4 {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+
+  .profil-puspaga p {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .profil-wa {
+    display: flex;
+    width: 100%;
+    min-height: 48px;
+    font-size: 16px;
+  }
+
+  .op-pengaduan {
+    padding: 22px 18px;
+  }
+
+  .op-pengaduan h3 {
+    font-size: 22px;
+  }
+
+  .op-pengaduan p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .op-belum-tersedia {
+    font-size: 15px;
+  }
+
+  .direktori-banner {
+    width: 100%;
+    margin-bottom: 22px;
+  }
+
+  .direktori-banner img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 /* FORMULIR PENGADUAN RESMI PUSPAGA OMAH PELUK */
