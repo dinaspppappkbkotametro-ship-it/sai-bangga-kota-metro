@@ -1660,3 +1660,20 @@
     padding: 17px;
   }
 }
+
+/* Gambar Direktori PUSPAGA OMAH PELUK */
+.direktori-banner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.direktori-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #d9e7f5;
+  box-shadow: 0 8px 24px rgba(18, 59, 120, 0.12);
+}
