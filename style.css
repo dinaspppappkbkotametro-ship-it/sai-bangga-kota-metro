@@ -1298,3 +1298,210 @@
     padding: 25px 18px;
   }
 }
+
+/* INFORMASI TAMBAHAN OMAH PELUK */
+
+.omah-peluk-tambahan {
+  max-width: 1150px;
+  margin: 45px auto 0;
+  padding: 20px;
+  color: #123b78;
+}
+
+.omah-peluk-tambahan .omah-peluk-heading {
+  max-width: 780px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.omah-peluk-tambahan h2 {
+  font-size: clamp(24px, 4vw, 34px);
+  line-height: 1.25;
+}
+
+.omah-peluk-tambahan h3 {
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+.omah-peluk-tambahan p {
+  color: #526782;
+  line-height: 1.75;
+}
+
+.op-panel {
+  margin: 22px 0;
+  padding: 25px;
+  border: 1px solid #d8e5f5;
+  border-top: 4px solid #f2b51d;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(18, 59, 120, .06);
+  scroll-margin-top: 120px;
+}
+
+.op-notice {
+  padding: 15px;
+  margin: 16px 0;
+  border-radius: 10px;
+  background: #fff5da;
+  color: #765200;
+  line-height: 1.6;
+}
+
+.op-button {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 9px;
+  background: #1766c1;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.op-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.op-card {
+  padding: 18px;
+  border: 1px solid #d8e5f5;
+  border-radius: 12px;
+  background: #f6f9ff;
+}
+
+.op-card h4 {
+  margin: 0 0 10px;
+  color: #1766c1;
+  font-size: 16px;
+}
+
+.op-card p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.op-prinsip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.op-prinsip > div {
+  padding: 16px;
+  border-left: 3px solid #ed2780;
+  border-radius: 8px;
+  background: #fff5fa;
+}
+
+.op-prinsip strong {
+  line-height: 1.5;
+}
+
+.op-prinsip p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.op-alur {
+  max-width: 650px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.op-langkah {
+  padding: 20px;
+  border: 1px solid #d8e5f5;
+  border-radius: 12px;
+  background: #f4f8ff;
+}
+
+.op-langkah > span {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: #1766c1;
+  color: white;
+  font-weight: 800;
+}
+
+.op-langkah strong {
+  display: block;
+}
+
+.op-langkah p {
+  margin-bottom: 0;
+}
+
+.op-panah {
+  padding: 8px;
+  color: #ed2780;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.op-hasil {
+  padding: 22px;
+  border-radius: 14px;
+  background: #123b78;
+  color: white;
+}
+
+.op-hasil-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.op-hasil-grid span {
+  padding: 12px 8px;
+  border-radius: 8px;
+  background: white;
+  color: #123b78;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.op-catatan {
+  font-size: 13px;
+}
+
+.op-upaya {
+  padding-left: 22px;
+  color: #526782;
+  line-height: 1.8;
+}
+
+.op-upaya li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .op-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .omah-peluk-tambahan {
+    padding: 12px;
+  }
+
+  .op-panel {
+    padding: 18px;
+  }
+
+  .op-grid,
+  .op-prinsip,
+  .op-hasil-grid {
+    grid-template-columns: 1fr;
+  }
+}
