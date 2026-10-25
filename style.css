@@ -1734,26 +1734,63 @@
   }
 }
 
-/* PERBAIKAN KHUSUS HP: PRINSIP PUSPAGA OMAH PELUK */
-@media screen and (max-width: 600px) {
 
-  .omah-peluk-info h3,
-  .omah-peluk-info h4,
-  .omah-peluk-info strong,
-  .omah-peluk-card h3,
-  .omah-peluk-card h4 {
-    color: #173f7a !important;
-    opacity: 1 !important;
-    -webkit-text-fill-color: #173f7a !important;
+/* PERBAIKAN TAMPILAN OMAH PELUK DI HP */
+@media screen and (max-width: 600px) {
+  .omah-peluk-section {
+    padding: 32px 12px !important;
+    overflow-x: hidden;
   }
 
+  .omah-peluk-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .omah-peluk-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .omah-peluk-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .omah-peluk-info {
+    width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+
+  /* Judul prinsip mudah dibaca */
+  .omah-peluk-info h3,
+  .omah-peluk-card h3 {
+    color: #173f7a !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Isi teks mudah dibaca */
   .omah-peluk-info p,
-  .omah-peluk-info li,
   .omah-peluk-card p,
+  .omah-peluk-info li,
   .omah-peluk-card li {
     color: #334155 !important;
-    opacity: 1 !important;
-    -webkit-text-fill-color: #334155 !important;
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+    overflow-wrap: anywhere;
   }
 
+  /* Kartu prinsip dengan latar lembut */
+  .omah-peluk-info > div {
+    background: #fff7fb !important;
+    border-left: 4px solid #e82e83 !important;
+    border-radius: 12px;
+    padding: 16px !important;
+    margin-bottom: 14px;
+  }
 }
