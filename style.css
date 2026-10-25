@@ -2243,3 +2243,40 @@
     line-height: 1.8 !important;
   }
 }
+
+/* PERBAIKAN KONTRAS TEKS PRINSIP OMAH PELUK */
+#perlindungan-omah-peluk .op-prinsip > div {
+  background-color: #fff0f5;
+  color: #17365d;
+  border: 1px solid #e8b8ca;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#perlindungan-omah-peluk .op-prinsip strong {
+  display: block;
+  color: #17365d !important;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+#perlindungan-omah-peluk .op-prinsip p {
+  color: #344054 !important;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* TAMPILAN PONSEL */
+@media (max-width: 600px) {
+  #perlindungan-omah-peluk .op-prinsip > div {
+    padding: 14px;
+  }
+
+  #perlindungan-omah-peluk .op-prinsip strong {
+    font-size: 15px;
+  }
+
+  #perlindungan-omah-peluk .op-prinsip p {
+    font-size: 14px;
+  }
+}
