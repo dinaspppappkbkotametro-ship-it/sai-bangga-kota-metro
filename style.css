@@ -2150,3 +2150,96 @@
     padding: 16px;
   }
 }
+
+/* PERBAIKAN KONTRAS FINAL - PRINSIP OMAH PELUK */
+
+/* Paksa semua tulisan dalam kartu prinsip menjadi biru tua */
+#omah-peluk .prinsip-card,
+#omah-peluk .prinsip-card *,
+#omah-peluk .prinsip-item,
+#omah-peluk .prinsip-item *,
+#omah-peluk .principle-card,
+#omah-peluk .principle-card *,
+#omah-peluk .principle-item,
+#omah-peluk .principle-item * {
+  color: #123B78 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+/* Latar kartu prinsip */
+#omah-peluk .prinsip-card,
+#omah-peluk .prinsip-item,
+#omah-peluk .principle-card,
+#omah-peluk .principle-item {
+  background: #FFF2F8 !important;
+  border-left: 5px solid #E91E79 !important;
+  border-radius: 12px !important;
+  padding: 18px !important;
+  box-sizing: border-box !important;
+}
+
+/* Judul prinsip */
+#omah-peluk .prinsip-card h4,
+#omah-peluk .prinsip-item h4,
+#omah-peluk .principle-card h4,
+#omah-peluk .principle-item h4 {
+  color: #123B78 !important;
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  font-weight: 800 !important;
+}
+
+/* Isi prinsip */
+#omah-peluk .prinsip-card p,
+#omah-peluk .prinsip-item p,
+#omah-peluk .principle-card p,
+#omah-peluk .principle-item p {
+  color: #263B55 !important;
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+}
+
+/* Jika kartu prinsip memakai elemen lain, pastikan teks tetap gelap */
+#omah-peluk [class*="prinsip"] h4,
+#omah-peluk [class*="prinsip"] p,
+#omah-peluk [class*="principle"] h4,
+#omah-peluk [class*="principle"] p {
+  color: #123B78 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+/* Judul utama panel prinsip */
+#omah-peluk .omah-peluk-info h3,
+#omah-peluk .op-panel h3 {
+  color: #123B78 !important;
+  background: transparent !important;
+  text-shadow: none !important;
+}
+
+/* Penyesuaian HP */
+@media screen and (max-width: 600px) {
+  #omah-peluk .prinsip-card,
+  #omah-peluk .prinsip-item,
+  #omah-peluk .principle-card,
+  #omah-peluk .principle-item {
+    padding: 16px !important;
+    margin-bottom: 14px !important;
+  }
+
+  #omah-peluk .prinsip-card h4,
+  #omah-peluk .prinsip-item h4,
+  #omah-peluk .principle-card h4,
+  #omah-peluk .principle-item h4 {
+    font-size: 16px !important;
+  }
+
+  #omah-peluk .prinsip-card p,
+  #omah-peluk .prinsip-item p,
+  #omah-peluk .principle-card p,
+  #omah-peluk .principle-item p {
+    font-size: 15px !important;
+    line-height: 1.8 !important;
+  }
+}
