@@ -1735,88 +1735,34 @@
 }
 
 
-/* GAMBAR UTAMA DASHBOARD OMAH PELUK */
-.omah-peluk-logo-dashboard {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 22px auto 26px;
-  padding: 0 16px;
-}
 
-.omah-peluk-logo-dashboard img {
-  display: block;
-  width: 100%;
-  max-width: 340px;
-  max-height: 230px;
-  height: auto;
-  object-fit: contain;
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(23, 63, 122, 0.13);
-}
-
-@media screen and (max-width: 600px) {
-  .omah-peluk-logo-dashboard {
-    margin: 16px auto 20px;
-  }
-
-  .omah-peluk-logo-dashboard img {
-    max-width: 260px;
-    max-height: 190px;
-  }
-}
-
-/* Ukuran logo PUSPAGA OMAH PELUK di dashboard */
+/* LOGO PUSPAGA OMAH PELUK */
 .omah-peluk-logo {
   display: block;
   width: 100%;
-  max-width: 520px;
+  max-width: 300px;
   height: auto;
-  max-height: 180px;
+  max-height: 130px;
   object-fit: contain;
   margin: 0 auto 24px;
-  border-radius: 12px;
 }
 
-/* Ukuran gambar di HP */
-@media (max-width: 600px) {
-  .omah-peluk-logo {
-    max-width: 100%;
-    max-height: 130px;
-    margin-bottom: 18px;
-  }
-}
-
-/* PERBAIKAN TAMPILAN OMAH PELUK DI HP */
-.omah-peluk-logo {
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  height: auto;
-  max-height: 180px;
-  object-fit: contain;
-  margin: 0 auto 20px;
-}
-
-/* Cegah gambar dan elemen melebar keluar layar */
+/* PERBAIKAN LAYOUT OMAH PELUK */
 #omah-peluk,
 .omah-peluk-section,
-.omah-peluk-container,
-.omah-peluk-heading {
+.omah-peluk-container {
+  width: 100%;
   max-width: 100%;
   min-width: 0;
   box-sizing: border-box;
 }
 
 #omah-peluk img,
-.omah-peluk-section img,
-.omah-peluk-container img {
+.omah-peluk-section img {
   max-width: 100%;
   height: auto;
-  box-sizing: border-box;
 }
 
-/* Penyesuaian khusus layar HP */
 @media screen and (max-width: 600px) {
   html,
   body {
@@ -1826,38 +1772,31 @@
   }
 
   .omah-peluk-section {
-    padding: 35px 14px !important;
-    overflow-x: clip;
+    padding: 32px 14px !important;
+    overflow-x: hidden;
   }
 
   .omah-peluk-container {
-    width: 100%;
     padding: 0;
     margin: 0 auto;
   }
 
-  .omah-peluk-heading {
-    width: 100%;
-    margin: 0 auto 24px;
-  }
-
   .omah-peluk-logo {
     width: 100%;
-    max-width: 300px;
-    max-height: 120px;
+    max-width: 240px;
+    max-height: 105px;
     object-fit: contain;
     margin: 0 auto 20px;
   }
 
   .omah-peluk-grid {
     grid-template-columns: minmax(0, 1fr) !important;
-    gap: 16px;
   }
 
   .omah-peluk-card,
   .omah-peluk-info {
-    min-width: 0;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
   }
 }
