@@ -2280,3 +2280,30 @@
     font-size: 14px;
   }
 }
+
+
+/* PERBAIKAN WARNA ALUR LAYANAN OMAH PELUK */
+#alur-layanan-omah-peluk .op-langkah {
+  background: #f2f7ff !important;
+  color: #263b55 !important;
+}
+
+#alur-layanan-omah-peluk .op-langkah strong,
+#alur-layanan-omah-peluk .op-langkah p {
+  color: #263b55 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* PERBAIKAN WARNA KARTU PRINSIP */
+#perlindungan-omah-peluk .op-prinsip > div {
+  background: #fff0f5 !important;
+  color: #17365d !important;
+}
+
+#perlindungan-omah-peluk .op-prinsip > div strong,
+#perlindungan-omah-peluk .op-prinsip > div p {
+  color: #17365d !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
