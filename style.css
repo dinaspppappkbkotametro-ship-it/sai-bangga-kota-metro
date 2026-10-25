@@ -1505,3 +1505,158 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* DIREKTORI INTERAKTIF PUSPAGA OMAH PELUK */
+
+.puspaga-list {
+  max-width: 1150px;
+  margin: 35px auto;
+  padding: 20px;
+  scroll-margin-top: 120px;
+}
+
+.direktori-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.direktori-heading h3 {
+  font-size: clamp(24px, 4vw, 34px);
+  color: #123b78;
+}
+
+.direktori-heading p {
+  color: #526782;
+  line-height: 1.7;
+}
+
+.direktori-filter {
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.direktori-filter label {
+  display: block;
+  margin-bottom: 8px;
+  color: #123b78;
+  font-weight: 700;
+}
+
+.direktori-filter input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbdcf0;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 15px;
+}
+
+.direktori-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.profil-puspaga {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #d9e7f5;
+  border-top: 4px solid #ed2780;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(18, 59, 120, .07);
+}
+
+.profil-kecamatan {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  background: #e9f2ff;
+  color: #1766c1;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.profil-puspaga h4 {
+  margin: 0 0 12px;
+  color: #123b78;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.profil-puspaga p {
+  color: #526782;
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.profil-wa {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 13px;
+  border-radius: 9px;
+  background: #087f62;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.profil-wa:hover {
+  background: #06664f;
+}
+
+#hasil-pencarian-puspaga {
+  text-align: center;
+  color: #526782;
+  margin: 20px 0;
+}
+
+.op-pengaduan {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 15px;
+  background: #123b78;
+  color: #fff;
+}
+
+.op-pengaduan h3 {
+  margin-top: 0;
+}
+
+.op-pengaduan p {
+  line-height: 1.7;
+}
+
+.op-belum-tersedia {
+  display: inline-block;
+  padding: 10px 13px;
+  border-radius: 8px;
+  background: #fff1c9;
+  color: #765200;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .direktori-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .puspaga-list {
+    padding: 12px;
+  }
+
+  .direktori-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profil-puspaga {
+    padding: 17px;
+  }
+}
