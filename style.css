@@ -1964,3 +1964,189 @@
     box-sizing: border-box;
   }
 }
+
+/* ==========================================
+   PERBAIKAN KONTRAS WARNA PUSPAGA OMAH PELUK
+   ========================================== */
+
+/* Judul bagian */
+.omah-peluk-info h3,
+.omah-peluk-info h2,
+.op-panel h3,
+.op-panel h2 {
+  color: #123b78 !important;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+/* Kartu prinsip */
+.omah-peluk-info .prinsip-card,
+.omah-peluk-info .prinsip-item,
+.op-panel .prinsip-card,
+.op-panel .prinsip-item {
+  background: #fff2f8 !important;
+  border-left: 4px solid #e91e79 !important;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 12px;
+  color: #263b55 !important;
+}
+
+/* Judul di dalam kartu prinsip */
+.omah-peluk-info .prinsip-card h4,
+.omah-peluk-info .prinsip-item h4,
+.op-panel .prinsip-card h4,
+.op-panel .prinsip-item h4 {
+  color: #123b78 !important;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+/* Isi kartu prinsip */
+.omah-peluk-info .prinsip-card p,
+.omah-peluk-info .prinsip-item p,
+.op-panel .prinsip-card p,
+.op-panel .prinsip-item p {
+  color: #344b68 !important;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Kartu layanan */
+.omah-peluk-info .layanan-card,
+.omah-peluk-info .layanan-item,
+.op-panel .layanan-card,
+.op-panel .layanan-item {
+  background: #f2f7ff !important;
+  border: 1px solid #cbdcf5;
+  border-radius: 12px;
+  padding: 18px;
+  color: #263b55 !important;
+}
+
+/* Judul kartu layanan */
+.omah-peluk-info .layanan-card h4,
+.omah-peluk-info .layanan-item h4,
+.op-panel .layanan-card h4,
+.op-panel .layanan-item h4 {
+  color: #123b78 !important;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   ALUR LAYANAN
+   ========================================== */
+
+.alur-layanan,
+.alur-omah-peluk {
+  background: #ffffff;
+  color: #263b55;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #d5e2f2;
+}
+
+.alur-layanan h3,
+.alur-omah-peluk h3 {
+  color: #123b78 !important;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+
+.alur-layanan p,
+.alur-omah-peluk p {
+  color: #344b68 !important;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Langkah-langkah alur */
+.alur-langkah,
+.alur-step {
+  background: #f2f7ff !important;
+  border: 1px solid #cbdcf5;
+  border-left: 5px solid #1766c1;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 14px 0;
+  color: #263b55 !important;
+}
+
+/* Nomor langkah */
+.alur-nomor,
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #123b78 !important;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 800;
+  margin-right: 10px;
+}
+
+/* Judul setiap langkah */
+.alur-langkah h4,
+.alur-step h4 {
+  color: #123b78 !important;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+/* Isi setiap langkah */
+.alur-langkah p,
+.alur-step p {
+  color: #344b68 !important;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Panel biru tua: pastikan teks tetap terbaca */
+.op-pengaduan h3,
+.op-pengaduan p {
+  color: #ffffff !important;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+  .omah-peluk-info h3,
+  .op-panel h3,
+  .alur-layanan h3,
+  .alur-omah-peluk h3 {
+    font-size: 21px;
+  }
+
+  .omah-peluk-info .prinsip-card h4,
+  .omah-peluk-info .prinsip-item h4,
+  .op-panel .prinsip-card h4,
+  .op-panel .prinsip-item h4,
+  .alur-langkah h4,
+  .alur-step h4 {
+    font-size: 16px;
+  }
+
+  .omah-peluk-info .prinsip-card p,
+  .omah-peluk-info .prinsip-item p,
+  .op-panel .prinsip-card p,
+  .op-panel .prinsip-item p,
+  .alur-langkah p,
+  .alur-step p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .alur-layanan,
+  .alur-omah-peluk {
+    padding: 16px;
+  }
+}
