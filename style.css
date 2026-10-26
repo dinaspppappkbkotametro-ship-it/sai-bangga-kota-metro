@@ -2367,3 +2367,22 @@
     font-size: 19px;
   }
 }
+
+/* Perkecil gambar ilustrasi kartu OMAH PELUK */
+.omah-peluk-grid-gambar .omah-kartu-ilustrasi {
+  width: 75% !important;
+  height: 125px !important;
+  object-fit: contain !important;
+  object-position: center;
+  display: block;
+  margin: 0 auto 12px;
+  background: transparent !important;
+}
+
+/* Tampilan di HP */
+@media (max-width: 800px) {
+  .omah-peluk-grid-gambar .omah-kartu-ilustrasi {
+    width: 70% !important;
+    height: 140px !important;
+  }
+}
