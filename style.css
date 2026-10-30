@@ -1850,7 +1850,11 @@
   border-left: 5px solid #f21b79;
   color: #ffffff;
 }
-
+/* KONTRAS TULISAN FORMULIR PENGADUAN */
+.pengaduan-resmi,
+.pengaduan-resmi * {
+  color: #ffffff !important;
+}
 .pengaduan-resmi h3 {
   margin: 0 0 12px;
   color: #ffffff;
