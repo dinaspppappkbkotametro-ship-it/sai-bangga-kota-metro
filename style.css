@@ -2738,3 +2738,18 @@ section#sai-data {
     min-width: 560px;
   }
 }
+/* FIX KONTRAS TEKS PENGADUAN OMAH PELUK */
+#omah-peluk .pengaduan-resmi,
+#omah-peluk .pengaduan-resmi h1,
+#omah-peluk .pengaduan-resmi h2,
+#omah-peluk .pengaduan-resmi h3,
+#omah-peluk .pengaduan-resmi p,
+#omah-peluk .pengaduan-resmi span,
+#omah-peluk .pengaduan-resmi strong,
+#omah-peluk .pengaduan-resmi small {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+  text-shadow: none !important;
+}
