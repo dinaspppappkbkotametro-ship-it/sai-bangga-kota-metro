@@ -2522,3 +2522,98 @@ section[id] { scroll-margin-top: 96px; }
   .skm-card { padding: 20px; }
   .op-button,.skm-button,.skm-link { width: 100%; text-align: center; justify-content: center; }
 }
+
+
+/* =========================================================
+   PERBAIKAN AKSESIBILITAS KONTRAS & TAMPILAN RESPONSIF
+   Teks gelap pada latar terang; teks putih hanya pada tombol/nav gelap.
+   ========================================================= */
+:root {
+  --text-main: #183653;
+  --text-muted: #4b6078;
+  --surface-soft: #f3f8ff;
+  --surface-white: #ffffff;
+}
+html { scroll-behavior: smooth; }
+body { color: var(--text-main); }
+
+/* Panel/kartu terang: pastikan isi terbaca */
+.about-detail, .about-detail p,
+.omah-peluk-container, .omah-peluk-info,
+.omah-peluk-tambahan,
+.op-panel, .op-panel p, .op-panel li,
+.op-operasional-grid article, .op-kegiatan-grid article,
+.skm-card, .skm-card p,
+.sai-data-dashboard, .sai-data-dashboard p,
+.data-panel, .data-kpi,
+.direktori-heading, .direktori-heading p,
+.puspaga-list, .puspaga-list p {
+  color: var(--text-main);
+}
+.about-detail h3, .omah-peluk-info h3,
+.omah-peluk-tambahan h2, .omah-peluk-tambahan h3,
+.op-panel h3, .op-panel h4,
+.direktori-heading h3, .data-panel h3,
+.data-panel h4, .skm-card h3 {
+  color: #123b78 !important;
+}
+.op-panel p, .op-panel li,
+.omah-peluk-info p, .omah-peluk-heading p,
+.skm-card p, .about-detail p,
+.op-operasional-grid p, .op-kegiatan-grid p {
+  color: #40566f !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+.op-langkah, .op-prinsip > div,
+.op-hasil, .omah-peluk-card, .omah-peluk-info,
+.skm-card, .data-panel, .data-kpi {
+  background-color: #ffffff;
+}
+.op-langkah strong, .op-langkah p,
+.op-prinsip strong, .op-prinsip p,
+.op-hasil strong, .op-hasil span {
+  color: #183653 !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Tombol tetap putih karena latarnya biru */
+.op-button, .skm-button, .skm-card .skm-button,
+button, .btn-primary, .button-primary {
+  color: #ffffff !important;
+}
+.op-button, .skm-button, button, .btn-primary, .button-primary {
+  background-color: #1765bd;
+}
+
+/* Tabel dashboard: header biru-putih, isi putih-gelap */
+#sai-data table th, .sai-data-table th {
+  background: #123b78 !important;
+  color: #ffffff !important;
+}
+#sai-data table td, .sai-data-table td {
+  color: #183653 !important;
+  background: #ffffff;
+}
+
+/* Mencegah elemen melebar keluar layar */
+*, *::before, *::after { box-sizing: border-box; }
+img, video, iframe { max-width: 100%; }
+.tentang-layout, .omah-peluk-container, .omah-peluk-tambahan,
+.sai-data-wrap, .data-two-col, .data-kpis,
+.skm-kontak-grid { min-width: 0; }
+
+@media (max-width: 800px) {
+  .tentang-layout { grid-template-columns: 1fr; }
+  .sai-gambar-dua { grid-template-columns: 1fr; }
+  .op-operasional-grid, .op-kegiatan-grid { grid-template-columns: 1fr 1fr; }
+  .skm-kontak-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .op-operasional-grid, .op-kegiatan-grid { grid-template-columns: 1fr; }
+  .omah-peluk-container, .omah-peluk-tambahan,
+  .op-panel, .skm-card { padding-left: 16px; padding-right: 16px; }
+  #sai-data .data-table-wrap, .sai-data-table-wrap { max-width: 100%; overflow-x: auto; }
+  #sai-data table, .sai-data-table { min-width: 560px; }
+}
