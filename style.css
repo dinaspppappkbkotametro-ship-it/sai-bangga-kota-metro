@@ -1850,10 +1850,26 @@
   border-left: 5px solid #f21b79;
   color: #ffffff;
 }
-/* KONTRAS TULISAN FORMULIR PENGADUAN */
-.pengaduan-resmi,
-.pengaduan-resmi * {
+/* PERBAIKAN KONTRAS PENGADUAN OMAH PELUK */
+.pengaduan-resmi {
   color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.pengaduan-resmi h1,
+.pengaduan-resmi h2,
+.pengaduan-resmi h3,
+.pengaduan-resmi p,
+.pengaduan-resmi span,
+.pengaduan-resmi strong,
+.pengaduan-resmi small,
+.pengaduan-resmi label {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+  text-shadow: none !important;
 }
 .pengaduan-resmi h3 {
   margin: 0 0 12px;
