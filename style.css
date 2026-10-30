@@ -479,8 +479,7 @@
   }
 
   .hero-family-image {
-  height: 220px;
-};
+    height: 220px;
     border-radius: 18px;
   }
 
@@ -2408,4 +2407,118 @@
   .gambar-sai-bangga {
     height: 240px;
   }
+}
+
+
+/* =========================================================
+   PENYEMPURNAAN SAI BANGGA — OKTOBER 2026
+   Komponen tambahan: SAI DATA, OMAH PELUK, SKM & Kontak
+   ========================================================= */
+
+/* SAI DATA */
+.sai-data-section {
+  display: block;
+  background: linear-gradient(135deg, #f2f8ff 0%, #ffffff 58%, #eef8f4 100%);
+}
+.sai-data-section .data-intro {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.sai-data-section .data-intro > p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 0 auto 14px;
+}
+.sai-data-dashboard {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(18px, 3vw, 32px);
+  border: 1px solid #d8e6f5;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(18,59,120,.08);
+}
+.sai-data-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+.sai-data-heading h3 { margin: 0; color: var(--navy); font: 800 22px Manrope, sans-serif; }
+.sai-data-group { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.sai-data-group h4 { margin: 0 0 14px; color: var(--navy); font: 800 17px Manrope, sans-serif; }
+.sai-data-cards { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-bottom: 12px; }
+.sai-data-card {
+  min-width: 0; padding: 16px; border: 1px solid #dce8f7; border-radius: 14px;
+  background: #f8fbff;
+}
+.sai-data-card small { display: block; min-height: 34px; color: #536a86; font-size: 12px; line-height: 1.4; }
+.sai-data-card strong { display: block; margin: 7px 0 2px; color: #123b78; font: 800 clamp(22px,2.5vw,30px) Manrope,sans-serif; overflow-wrap: anywhere; }
+.sai-data-card span { display: block; color: #64758a; font-size: 11px; line-height: 1.45; }
+.sai-data-card.emphasis { background: #fff5f6; border-color: #f1cbd2; }
+.sai-data-card.emphasis strong { color: #c6283d; }
+.sai-data-source,.sai-data-note { color: #66768b; font-size: 12px; line-height: 1.6; }
+.sai-data-note { margin: 22px 0 0; padding: 14px 16px; background: #fff8e6; border-left: 4px solid #e6ad27; border-radius: 8px; }
+.sai-data-table-wrap { overflow-x: auto; }
+.sai-data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.sai-data-table th,.sai-data-table td { padding: 10px 12px; border: 1px solid #dce6f2; text-align: center; white-space: nowrap; }
+.sai-data-table th { background: #123b78; color: #fff; }
+.sai-data-table td:first-child { text-align: left; font-weight: 700; }
+
+/* OMAH PELUK operational information and activities */
+.op-operasional-grid,.op-kegiatan-grid {
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+.op-operasional-grid article,.op-kegiatan-grid article {
+  min-width: 0; padding: 17px; border: 1px solid #dce8f5; border-radius: 13px;
+  background: #f8fbff;
+}
+.op-operasional-grid h4,.op-kegiatan-grid h4 { margin: 9px 0 6px; color: #123b78; font: 800 15px Manrope,sans-serif; }
+.op-operasional-grid p,.op-kegiatan-grid p { margin: 0; color: #50647e; font-size: 13px; line-height: 1.65; }
+.op-status { display: inline-block; padding: 5px 9px; border-radius: 30px; background: #e5f4ea; color: #176c3a; font-size: 11px; font-weight: 800; }
+.op-kegiatan-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.op-button { display: inline-flex; align-items: center; justify-content: center; padding: 11px 17px; border-radius: 9px; background: #1765bd; color: #fff; font-weight: 800; font-size: 13px; }
+.op-button:hover { background: #123b78; }
+
+/* SKM and official contact */
+.skm-kontak-section { background: #f5f9ff; }
+.skm-kontak-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 18px; max-width: 1180px; margin: 0 auto; }
+.skm-card { display: flex; flex-direction: column; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 24px; border: 1px solid #dce8f5; border-radius: 17px; background: #fff; box-shadow: 0 8px 22px rgba(18,59,120,.06); }
+.skm-card h3 { margin: 8px 0; color: #123b78; font: 800 19px Manrope,sans-serif; }
+.skm-card p { margin: 0 0 8px; color: #5b6f88; font-size: 14px; line-height: 1.7; }
+.skm-kicker { color: #218443; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; }
+.skm-survey { display: grid; grid-template-columns: minmax(0,1fr) 132px; align-items: center; }
+.skm-survey img { display: block; width: 132px; height: 132px; object-fit: contain; padding: 6px; border: 1px solid #e1eaf5; border-radius: 10px; background: #fff; }
+.skm-button,.skm-link { display: inline-flex; width: fit-content; padding: 11px 15px; border-radius: 9px; background: #1765bd; color: #fff; font-size: 13px; font-weight: 800; }
+.skm-link { background: #eaf3ff; color: #123b78; overflow-wrap: anywhere; }
+.skm-button:hover { background: #123b78; }
+
+/* Accessible focus and anchor spacing */
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible {
+  outline: 3px solid #f2b51d; outline-offset: 3px;
+}
+section[id] { scroll-margin-top: 96px; }
+
+@media (max-width: 900px) {
+  .sai-data-cards { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .op-operasional-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .skm-kontak-grid { grid-template-columns: 1fr 1fr; }
+  .skm-survey { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .sai-data-heading { align-items: flex-start; flex-direction: column; }
+  .sai-data-cards { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .sai-data-card { padding: 12px; }
+  .sai-data-card small { min-height: 42px; font-size: 11px; }
+  .sai-data-table { font-size: 11px; }
+  .sai-data-table th,.sai-data-table td { padding: 8px; }
+  .op-operasional-grid,.op-kegiatan-grid,.skm-kontak-grid { grid-template-columns: 1fr; }
+  .skm-survey { grid-column: auto; grid-template-columns: 1fr; }
+  .skm-survey img { width: 150px; height: 150px; margin: 0 auto; }
+  .skm-card { padding: 20px; }
+  .op-button,.skm-button,.skm-link { width: 100%; text-align: center; justify-content: center; }
 }
