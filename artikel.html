@@ -1,1 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel dan Materi Edukasi | SAI BANGGA</title>
 
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #173b62;
+      background: #f5faff;
+    }
+
+    header {
+      background: white;
+      padding: 16px 6%;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 2px 12px #123b7815;
+    }
+
+    header img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+    }
+
+    header h2 {
+      margin: 0;
+      color: #164b83;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      color: #607991;
+      font-size: 13px;
+    }
+
+    .hero {
+      padding: 48px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #12477f, #168bd0);
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: 32px;
+    }
+
+    .hero p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 1150px;
+      margin: 35px auto;
+      padding: 0 18px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+    }
+
+    .section-title h2 {
+      margin-bottom: 8px;
+      color: #164b83;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .article-card {
+      background: white;
+      border: 1px solid #dceaf5;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px #164b8310;
+    }
+
+    .article-cover {
+      min-height: 155px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 22px;
+      color: white;
+      background: linear-gradient(135deg, #168bd0, #164b83);
+    }
+
+    .article-cover span {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .article-cover strong {
+      display: block;
+      font-size: 19px;
+      line-height: 1.4;
+    }
+
+    .article-body {
+      padding: 20px;
+    }
+
+    .category {
+      color: #087bb9;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .article-body h3 {
+      color: #174d7c;
+      line-height: 1.4;
+      min-height: 55px;
+    }
+
+    .article-body p {
+      color: #60758a;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 0;
+      border-radius: 9px;
+      background: #087fbe;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #075b91;
+    }
+
+    .download-link {
+      display: block;
+      margin-top: 12px;
+      padding: 11px;
+      border: 1px solid #168bd0;
+      border-radius: 9px;
+      color: #0875ad;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    #reader {
+      display: none;
+      margin-top: 45px;
+      padding: 22px;
+      background: white;
+      border: 1px solid #dceaf5;
+      border-radius: 16px;
+    }
+
+    #reader h2 {
+      color: #164b83;
+    }
+
+    #pdfViewer {
+      width: 100%;
+      height: 750px;
+      border: 1px solid #dce5ee;
+      border-radius: 8px;
+    }
+
+    .reader-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+
+    .reader-actions a {
+      padding: 11px 17px;
+      border-radius: 8px;
+      background: #087fbe;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .back {
+      display: inline-block;
+      margin: 10px 0 20px;
+      color: #0875ad;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px 15px;
+      text-align: center;
+      color: white;
+      background: #123f70;
+      line-height: 1.7;
+    }
+
+    @media(max-width:600px) {
+      .hero h1 { font-size: 25px; }
+      #pdfViewer { height: 520px; }
+      #reader { padding: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="assets/Logo%20Sai%20Bangga.jpeg" alt="Logo SAI BANGGA">
+  <div>
+    <h2>SAI BANGGA</h2>
+    <p>Sekolah Keluarga Kota Metro</p>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Artikel dan Materi Edukasi</h1>
+  <p>
+    Belajar dari mana saja untuk keluarga Kota Metro.<br>
+    Saling Asah, Saling Asuh, Saling Asih.
+  </p>
+</section>
+
+<main>
+
+  <a class="back" href="index.html">← Kembali ke Beranda SAI BANGGA</a>
+
+  <div class="section-title">
+    <h2>📚 Pustaka Edukasi Keluarga</h2>
+    <p>Pilih artikel untuk membaca materi atau mengunduh dokumennya.</p>
+  </div>
+
+  <div class="article-grid">
+
+    <article class="article-card">
+      <div class="article-cover">
+        <div>
+          <span>❤️</span>
+          <strong>Pengasuhan Positif</strong>
+        </div>
+      </div>
+      <div class="article-body">
+        <span class="category">Pengasuhan Positif</span>
+        <h3>Komunikasi Hangat antara Orang Tua dan Anak</h3>
+        <p>Membangun komunikasi yang baik, hangat, dan penuh kasih sayang dalam keluarga.</p>
+        <button onclick="bacaArtikel(0)">Baca Artikel</button>
+        <a class="download-link" href="assets/Artikel%20Komunikasi%20Hangat%20Antara%20Orang%20Tua%20dan%20Anak.pdf" download>⬇ Unduh PDF</a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="article-cover">
+        <div>
+          <span>🌸</span>
+          <strong>Kesehatan Reproduksi</strong>
+        </div>
+      </div>
+      <div class="article-body">
+        <span class="category">Kesehatan Reproduksi</span>
+        <h3>Mengenal Tubuh dan Menjaga Kebersihan Organ Reproduksi</h3>
+        <p>Meningkatkan pengetahuan tentang kesehatan dan kebersihan organ reproduksi.</p>
+        <button onclick="bacaArtikel(1)">Baca Artikel</button>
+        <a class="download-link" href="assets/Artikel%20Mengenal%20Tubuh%20dan%20Menjaga%20Kebersihan%20Organ%20Reproduksi.pdf" download>⬇ Unduh PDF</a>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="article-cover">
+        <div>
+          <span>🌱</span>
+          <strong>Keluarga Sehat</strong>
+        </div>
+      </div>
+      <div class="article-body">
+        <span class="category">Keluarga Sehat, Cegah Stunting</span>
+        <h3>Mengenal Stunting dan Upaya Pencegahannya</h3>
+        <p>Mengenal penyebab, dampak, dan langkah pencegahan stunting sejak dini.</p>
+        <button onclick="bacaArtikel(2)">Baca Artikel</button>
+        <a class="download-link" href="assets/Artikel%20Mengenal%20stunting%20dan%20upaya%20pencegahannya.pdf" download>⬇ Unduh PDF</a>
+      </div>
+    </article>
+
+  </div>
+
+  <section id="reader">
+    <a class="back" href="#daftar" onclick="tutupArtikel()">← Kembali ke daftar artikel</a>
+    <h2 id="readerTitle">Baca Artikel</h2>
+
+    <div class="reader-actions">
+      <a id="readerDownload" href="#" download>⬇ Unduh PDF</a>
+      <a id="readerNewTab" href="#" target="_blank" rel="noopener">Buka PDF di tab baru</a>
+    </div>
+
+    <iframe id="pdfViewer" title="Bacaan artikel PDF"></iframe>
+  </section>
+
+</main>
+
+<footer>
+  <strong>SAI BANGGA – Sekolah Keluarga Kota Metro</strong><br>
+  Saling Asah, Saling Asuh, Saling Asih<br>
+  Pemerintah Kota Metro
+</footer>
+
+<script>
+  const artikel = [
+    {
+      judul: "Komunikasi Hangat antara Orang Tua dan Anak",
+      file: "assets/Artikel%20Komunikasi%20Hangat%20Antara%20Orang%20Tua%20dan%20Anak.pdf"
+    },
+    {
+      judul: "Mengenal Tubuh dan Menjaga Kebersihan Organ Reproduksi",
+      file: "assets/Artikel%20Mengenal%20Tubuh%20dan%20Menjaga%20Kebersihan%20Organ%20Reproduksi.pdf"
+    },
+    {
+      judul: "Mengenal Stunting dan Upaya Pencegahannya",
+      file: "assets/Artikel%20Mengenal%20stunting%20dan%20upaya%20pencegahannya.pdf"
+    }
+  ];
+
+  function bacaArtikel(index) {
+    const item = artikel[index];
+    const reader = document.getElementById("reader");
+
+    document.getElementById("readerTitle").textContent = item.judul;
+    document.getElementById("pdfViewer").src = item.file + "#toolbar=1";
+    document.getElementById("readerDownload").href = item.file;
+    document.getElementById("readerNewTab").href = item.file;
+
+    reader.style.display = "block";
+    reader.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function tutupArtikel() {
+    document.getElementById("reader").style.display = "none";
+    document.getElementById("pdfViewer").src = "";
+  }
+</script>
+
+</body>
+</html>
