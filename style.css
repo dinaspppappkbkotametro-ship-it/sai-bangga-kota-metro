@@ -2745,3 +2745,10 @@ section#sai-data {
   filter: none !important;
   text-shadow: none !important;
 }
+/* KONTRAS TULISAN KOTAK ANDA TIDAK SENDIRI */
+.omah-peluk-info,
+.omah-peluk-info * {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
